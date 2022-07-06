@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <navbar-menu></navbar-menu>
+    <sidebar-menu></sidebar-menu>
     <router-view />
   </div>
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+import navBar from "@/components/menu/navBar.vue";
+import sideBar from "@/components/menu/sideBar.vue";
+
+export default Vue.extend({
+  name: "App",
+  components: {
+    "navbar-menu": navBar,
+    "sidebar-menu": sideBar,
+  },
+});
+</script>
 
 <style lang="scss">
 #app {

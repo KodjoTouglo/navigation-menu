@@ -1,0 +1,167 @@
+@import "@/style/global/color.scss";
+
+%show {
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .toggle_btn {
+    position: absolute;
+    left: 120%;
+    top: 25px;
+    cursor: pointer;
+  }
+  
+  .toggle_btn span {
+    display: block;
+    background-color: $black;
+    width: 30px;
+    height: 5px;
+    margin: 3px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $dark-blue;
+    height: 100%;
+    width: 100px;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+  }
+  
+  .sidebar.active {
+    width: 240px;
+  }
+  
+  .sidebar .logo_content .logo {
+    margin-top: 10px;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    @extend %show
+  }
+  
+  .sidebar.active .logo_content .logo {
+    margin-top: 10px;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    @extend %show
+  }
+  
+  .sidebar.active .logo_content .logo {
+    opacity: 1;
+    pointer-events: none;
+  
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+    }
+  }
+  
+  .logo_content .logo img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+  }
+  
+  .sidebar ul {
+    margin-top: 20px;
+  }
+  
+  .sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+    border-radius: 3px;
+  }
+  
+  .sidebar ul li a {
+    color: $white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 3px;
+  }
+  
+  .sidebar .links_name {
+    opacity: 0;
+    pointer-events: auto;
+  }
+  
+  .sidebar.active .links_name {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    color: $custom-black;
+    background: $white;
+    opacity: 1;
+  }
+  
+  .sidebar ul li a i {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 3px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+  }
+  
+  .sidebar ul li .tooltip {
+    position: absolute;
+    left: 122px;
+    top: 50%;
+    transform: translateY(-50%, -50%);
+    border-radius: 3px;
+    height: 35px;
+    width: 122px;
+    background: $white;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+  }
+  
+  .sidebar.active ul li .tooltip {
+    display: none;
+  }
+  
+  .sidebar ul li:hover .tooltip {
+    top: 50%;
+    opacity: 1;
+  }

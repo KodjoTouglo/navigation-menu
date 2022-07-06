@@ -1,0 +1,18 @@
+// body {
+//     width: calc(100% - 100px);
+// }
+
+.container {
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 100%;
+    //width: calc(100% - 100px);
+}
+
+.container.active {
+    width: calc(100% - 450px);
+    left: 240px;
+}
