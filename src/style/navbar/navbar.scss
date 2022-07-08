@@ -11,7 +11,8 @@
     align-items: center;
     background-color: $light-blue;
     padding: 20px 25%;
-    width: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
 
     .title {
       margin-left: 20px;
@@ -19,8 +20,14 @@
       font-weight: 600;
       color: $black;
       text-align: center;
-      width: calc(100% - 40px);
+      width: calc(100% - 78px);
+      left: 78px;
       margin-bottom: 5px;
+    }
+
+    .title.active {
+      width: calc(100% - 240px);
+      left: 240px;
     }
   }
   

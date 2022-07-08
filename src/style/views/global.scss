@@ -4,6 +4,8 @@
     align-items: center;
     margin-top: 90px;
     margin-bottom: 90px;
+    width: calc(100% - 78px);
+    left: 78px;
     //height: 100%;
 
    
@@ -14,6 +16,6 @@
 }
 
 .container.active {
-    width: calc(100% - 450px);
+    width: calc(100% - 240px);
     left: 240px;
 }

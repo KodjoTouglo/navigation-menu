@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <pageun-menu item="Page Un"></pageun-menu>
     <div class="container">
       <b-card-group deck>

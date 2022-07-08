@@ -25,28 +25,6 @@
           class="m-3"
         >
         </b-card>
-        <b-card
-          title="Page 1"
-          img-src="https://picsum.photos/600/300/?image=25"
-          img-alt="Image"
-          img-top
-          tag="article"
-          align="center"
-          style="min-width: 20rem; max-width: 20rem"
-          class="m-3"
-        >
-        </b-card>
-        <b-card
-          title="Page 1"
-          img-src="https://picsum.photos/600/300/?image=25"
-          img-alt="Image"
-          img-top
-          tag="article"
-          align="center"
-          style="min-width: 20rem; max-width: 20rem"
-          class="m-3"
-        >
-        </b-card>
       </b-card-group>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <tiroir-menu item="Tiroir"></tiroir-menu>
     <div class="container">
       <b-card-group deck>
