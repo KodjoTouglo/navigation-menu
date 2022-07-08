@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <div class="toggle_btn" @click="toggle()">
+    <div class="toggle_btn" style="display: block" @click="toggle()">
       <span></span>
       <span></span>
       <span></span>

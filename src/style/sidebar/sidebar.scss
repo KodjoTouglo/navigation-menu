@@ -23,7 +23,7 @@
   .toggle_btn {
     position: absolute;
     left: 120%;
-    top: 25px;
+    top: 17px;
     cursor: pointer;
   }
   
@@ -37,11 +37,12 @@
   
   .sidebar {
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: $dark-blue;
     height: 100%;
-    width: 100px;
+    width: 78px;
     padding: 6px 14px;
     transition: all 0.5s ease;
   }
@@ -165,3 +166,37 @@
     top: 50%;
     opacity: 1;
   }
+
+// Responsive
+
+@media only screen and (max-width: 915px) {
+ 
+  .sidebar {
+    display: none;
+  }
+  .toggle_btn {
+    position: absolute;
+    left: 120%;
+    top: 17px;
+    cursor: pointer;
+  }
+
+  .toggle_btn span {
+    display: block;
+    background-color: $black;
+    width: 30px;
+    height: 5px;
+    margin: 3px;
+  }
+
+  .sidebar .logo_content {
+    display: none;
+    width: 0%;
+  }
+
+  .sidebar .nav_list {
+    display: none;
+    width: 0%;
+  }
+}
+

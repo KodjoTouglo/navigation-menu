@@ -1,15 +1,16 @@
-// body {
-//     width: calc(100% - 100px);
-// }
-
 .container {
-    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    height: 100%;
-    //width: calc(100% - 100px);
+    margin-top: 90px;
+    margin-bottom: 90px;
+    //height: 100%;
+
+   
+}
+
+.container b-card-group {
+    left: 240px;
 }
 
 .container.active {
